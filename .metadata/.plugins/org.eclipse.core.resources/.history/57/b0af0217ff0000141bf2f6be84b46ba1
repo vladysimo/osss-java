@@ -1,0 +1,14 @@
+import java.util.*;
+import java.io.*;
+
+public class CopyClass {
+	//This basic application will copy a file from a location to another
+	
+	public static void main(String[] args) {
+		
+		//File f = new File(args[0]);
+		//File g = new File(args[1]);
+		
+		System.out.println(args[0] + args[1]);
+	}
+}

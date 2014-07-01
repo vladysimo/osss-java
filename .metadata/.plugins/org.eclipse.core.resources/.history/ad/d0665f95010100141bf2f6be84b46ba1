@@ -1,0 +1,48 @@
+import java.util.*;
+import java.io.*;
+
+public class CopyClass {
+	//This basic application will copy a file from a location to another
+	
+	public static void main(String[] args) throws IOException {
+		
+		File f = new File(args[0]);
+		File g = new File(args[1]);
+		
+		if(args.length == 2) {
+			
+			 InputStream is = new FileInputStream(f);
+			    OutputStream os = new FileOutputStream(g);
+			     
+			     byte[] buffer = new byte[1024];
+			        int length, s = 0;
+			        while ((length = is.read(buffer)) > 0) {
+			            os.write(buffer, 0, length);
+			            s += length;
+			        }
+			     
+			     
+			        is.close();
+			        os.close();
+			        
+			 System.out.println(s);
+		}
+		else
+		{   
+		     
+		    InputStream is = new FileInputStream(f);
+		    OutputStream os = new FileOutputStream(g);
+		     
+		     byte[] buffer = new byte[1024];
+		        int length;
+		        while ((length = is.read(buffer)) > 0) {
+		            os.write(buffer, 0, length);
+		        }
+		     
+		     
+		        is.close();
+		        os.close();
+		}
+		
+	}
+}
