@@ -1,8 +1,8 @@
-import java.util.*;
+//This basic application will copy a file from a location to another
+
 import java.io.*;
 
 public class CopyClass {
-	//This basic application will copy a file from a location to another
 	
 	public static void main(String[] args) throws IOException {
 	

@@ -1,0 +1,19 @@
+import java.awt.*;
+import javax.swing.*;
+
+public class FirstGuiApp {
+	
+	public static void main(String[] args) {
+		
+		FirstDisplay fd = new FirstDisplay();
+		
+		JButton button = new JButton("Do not press");
+		ButtonHandler bh = new ButtonHandler();
+		
+		button.addActionListener(bh);
+		
+		JPanel content = new JPanel();
+		content.setLayout(new BorderLayout());
+		content.add(comp, index);
+	}
+}

@@ -1,0 +1,8 @@
+import java.awt.*;
+
+public class FirstGuiApp {
+	
+	public static void main(String[] args) {
+		
+	}
+}

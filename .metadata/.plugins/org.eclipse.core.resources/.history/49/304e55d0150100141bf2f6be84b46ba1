@@ -1,0 +1,11 @@
+import java.awt.*;
+import javax.swing.*;
+
+public class FirstDisplay extends JPanel{
+	
+	public void paintComponent(Graphics g) {
+		super.paintComponent(g);
+		
+		g.drawString("SUPER DUPER", x, y);
+	}
+}

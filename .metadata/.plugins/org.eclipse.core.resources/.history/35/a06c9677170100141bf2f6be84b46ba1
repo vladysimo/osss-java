@@ -1,0 +1,8 @@
+public class FirstGuiApp {
+	
+	public static void main(String[] args) {
+		
+		FirstDisplay fd = new FirstDisplay();
+		JButton button = new JButton("Submit");
+	}
+}
