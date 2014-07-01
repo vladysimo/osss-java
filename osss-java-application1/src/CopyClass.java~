@@ -6,9 +6,9 @@ public class CopyClass {
 	
 	public static void main(String[] args) throws IOException {
 	
-		if (args.length!=2 && args.length!=3 )
+		if (args.length!=2 || args.length!=3 )
 		{
-			System.out.println("Invalid number of argument.\n Usage: CopyClass [OPTION]...SOURCE...DEST");
+			System.out.println("Utilizati 2 sau 3 argumente");
 		}
 		
 		else
@@ -18,7 +18,7 @@ public class CopyClass {
 			File g = new File(args[args.length-1]);
 
 			if(g.exists() && args.length == 2)
-				System.out.println("Error: File already exists!");
+				System.out.println("ERROR");
 		
 			else
 			{
