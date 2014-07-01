@@ -1,0 +1,27 @@
+import java.util.*;
+
+//ArrayList si iteratori
+
+public class test {
+	
+	static ArrayList<Integer> al = new ArrayList<Integer>();
+	
+	public static void main(String[] args) {
+		
+		Random r = new Random();
+		for (int i = 0; i < 10; i++)
+			al.add(r.nextInt());
+		
+		Iterator<Integer> it;
+		it = al.iterator();
+		
+		/*while(it.hasNext()) {
+			
+			Integer a = it.next();
+			System.out.println(a);
+		}*/
+		
+		for(Integer x : al)
+			System.out.println(x);
+	}
+}
