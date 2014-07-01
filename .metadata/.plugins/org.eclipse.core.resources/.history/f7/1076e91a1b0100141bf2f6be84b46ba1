@@ -13,13 +13,11 @@ public class FirstGuiApp {
 		ButtonHandler bh = new ButtonHandler();
 		button.addActionListener(bh);
 		
-		//button
 		JPanel content = new JPanel();
 		content.setLayout(new BorderLayout());
 		content.add(fd, BorderLayout.CENTER);
 		content.add(button, BorderLayout.SOUTH);
 		
-		//frame
 		JFrame win = new JFrame("#yolo");
 		win.setContentPane(content);
 		win.setSize(350, 200);
